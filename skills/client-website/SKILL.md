@@ -1,6 +1,6 @@
 ---
 name: client-website
-description: Step-by-step workflow for building a client's website, from research to a clickable demo (prototype) to the full production site and launch. Use whenever the user starts or continues a client website project, types a step code (A1–A4, B1–B5), or says things like "research this business", "new client", "make a demo/prototype", "plan the site", "build the full site", "production", "launch" or "what's the next step". Also use it to plan scroll animations (exploded views, scroll-scrubbed hero videos), shot lists and image- or video-generation prompts for a client site.
+description: Step-by-step workflow for building a client's website, from research to a clickable demo (prototype) to the full production site and launch. Use whenever the user starts or continues a client website project, types a step code (A1–A4, B1–B5), or says things like "research this business", "new client", "make a demo/prototype", "plan the site", "build the full site", "production", "launch" or "what's the next step". Also use it to come up with signature effects (scroll animations, 3D products, before/after reveals, a journey through the site), what assets they need, and image- or video-generation prompts for a client site.
 ---
 
 # Client website workflow
@@ -17,8 +17,8 @@ Always build with the `premium-web-stack` skill, design with `impeccable`, and k
 clearly marked placeholders and list them for the user.
 
 Whenever you plan or build motion or pictures, read `references/visual-assets.md`. It covers
-the scroll-animation ideas, the shot list to ask the user for, how to write image and video
-prompts, which pictures must be real client photos, and how to build frame sequences.
+how to come up with effects, what each one needs from the user, how to write image and video
+prompts, which pictures must be real client photos, and how to build each effect.
 
 At the end of every step:
 1. Summarise what was done.
@@ -59,16 +59,16 @@ Use `impeccable` (shape). Read `docs/research.md`. Keep it short. No page texts 
   - **Services:** exactly **5 cards**, one for each of their main services
   - **Trust bar:** the things their customers care about most, taken from research section 5
     (e.g. years of experience, warranty, certified, response time, review score)
-- **Motion concept:** propose 2–3 scroll-animation ideas for the hero (for example an exploded
-  view, a build-up or a before → after scrub), each tied to what this business does. Say where
-  the same technique could carry into other sections or through the whole page when that
-  would look great.
-- Ask the user about the visual direction and which motion concept they want before finalising.
+- **Signature moments:** propose 2–3 creative concepts, each tied to what this business does:
+  for example an exploded view on scroll, a 3D product that turns as you scroll, a before →
+  after facade reveal, or a journey through the whole page. Recommend one.
+- Ask the user about the visual direction and which concept they want before finalising.
 
 Then write **`docs/asset-plan.md`** (template in `references/visual-assets.md`):
 - the **house style** that every image prompt shares, so all pictures look like one shoot
-- the **scroll sequences**: text beats, the 2–4 keyframe stills and the video needed, with
-  copy-paste image prompts, a video prompt and the file specs
+- the **signature moments**: where they sit, what the visitor sees, and what the user must
+  create for them (keyframes, video, 3D model, before/after pair), with copy-paste prompts and
+  file specs
 - **every picture on the home page** (hero, 5 service cards, about, backgrounds), with its
   aspect ratio and a copy-paste prompt, or marked **real photo from client** where AI must not
   be used
@@ -86,9 +86,9 @@ Set-up, build and motion are one step. Follow `docs/demo-plan.md` and `docs/rese
 - **Prototype rules:** no database (no Supabase) and no real form sending; the contact form only
   shows a success message. Use their real texts, logo and photos where available, otherwise
   marked placeholders.
-- Scroll sequences: if the video is in `assets/raw/`, turn it into frames and build the
-  scroll-scrubbed canvas as described in `references/visual-assets.md`. If not, wire the
-  animation with a placeholder so the user only has to drop in the files.
+- Signature moments: build them from the files in `assets/raw/` as described in
+  `references/visual-assets.md`. If files are missing, build with placeholders so the user
+  only has to drop them in.
 - Deploy to Vercel and give the user the preview link. Offer the `impeccable` commands
   (bolder, quieter, typeset, layout, animate) to steer the look.
 
@@ -113,7 +113,7 @@ Read `docs/research.md`, `docs/demo-plan.md` and the demo. Ask about anything un
    and analytics.
 6. **Pictures and motion:** extend `docs/asset-plan.md` to every page: each image slot with a
    copy-paste prompt (same house style) or marked as a real client photo, plus any extra
-   scroll sequences or section transitions worth adding.
+   signature moments worth adding.
 
 ### B2 · Build
 Set-up, build and motion together, starting from the demo. Build **one page per request**, in
@@ -121,7 +121,7 @@ the order of `docs/site-plan.md`, and push with a Vercel preview link each time.
 - Supabase only if B1 says so, in an EU region (Frankfurt).
 - Real form delivery as planned in B1.
 - 3D only where it shows the product better: lazy-loaded, with a still image on mobile.
-- Scroll sequences and pictures from `docs/asset-plan.md`, built as in
+- Signature moments and pictures from `docs/asset-plan.md`, built as in
   `references/visual-assets.md`.
 
 ### B3 · Check
