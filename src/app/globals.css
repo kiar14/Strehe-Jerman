@@ -95,3 +95,8 @@
 
 /* Desktop hero: keep the top of the photo (roof and sky) in view. */
 @media(min-width:701px){.hero-photo{top:0}.hero-photo img{object-position:center top}}
+
+/* Thinner header; hero follows so the photo starts higher. */
+.header{height:66px}.hero{height:calc(100svh - 66px)}
+@media(max-width:1150px){.header{height:64px}.hero{height:calc(100svh - 64px)}}
+@media(max-width:700px){.header{height:60px}.hero{height:calc(100svh - 60px)}}
