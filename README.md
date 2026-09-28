@@ -13,7 +13,7 @@ Production: `npm run build && npm run start`. Checks: `npm run lint`, `npm run t
 
 ## Behavior
 
-Five service links preselect the inquiry form. Form submission is a client-only demonstration; no personal data is sent or stored. Project gallery supports arrow keys and Escape. Logo strip pauses on hover/focus and when offscreen. Reduced-motion users receive a static presentation. Site is intentionally excluded from indexing.
+Service links point to the planned production routes. Form submission is a client-only demonstration; no personal data is sent or stored. Project gallery supports arrow keys and Escape. Logo strip pauses on hover/focus and when offscreen. Reduced-motion users receive a static presentation. Site is intentionally excluded from indexing.
 
 ## Editing
 
@@ -21,7 +21,11 @@ Content: `src/app/page.tsx`. Interactions: `src/components/interactions.tsx`. De
 
 ## Hosting
 
-The final version is available locally at http://localhost:3002 while the production server is running. An earlier temporary Vercel preview expires automatically and does not include the final accessibility fixes. Publishing the final source and supplied images to Vercel is awaiting explicit transfer approval after automatic approval review blocked the update. The existing domain was not changed.
+Live demo: https://strehe-jerman-azure.vercel.app
+
+Source: https://github.com/kiar14/Strehe-Jerman
+
+Vercel uses the Next.js preset, repository root, and the `main` production branch. Pushes to `main` trigger deployment. No environment variables are required for this demo. The existing client domain was not changed.
 
 ## Latest refinement
 Reference-led form, process and testimonial carousel, centered service dropdown, hero trust strip, colored logos and expanded footer. Future service, FAQ and legal routes intentionally have no pages yet. See docs/refinement-verification.md.
