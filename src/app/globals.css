@@ -92,3 +92,6 @@
  .review-card>p{font-size:19px}
  .review-dots{margin:6px 0 18px}
 }
+
+/* Desktop hero: keep the top of the photo (roof and sky) in view. */
+@media(min-width:701px){.hero-photo{top:0}.hero-photo img{object-position:center top}}
