@@ -19,3 +19,7 @@
 - Manufacturer gaps increased from 58px to 78px (mobile 28px to 43px).
 - Review autoplay uses a 2000ms interval, pauses on hover/focus, offscreen and hidden tab, supports a pause button and respects reduced motion.
 - Five stars are marked as an unverified demo rating display; no verified rating is asserted.
+
+
+## Review and footer update — 2026-09-28
+Removed both requested review captions and linked the review button to the supplied Google profile. All review texts occupy the same CSS grid cell, with inactive text invisible and aria-hidden, reserving the longest text height at every viewport without clipping. Footer hours: Monday–Friday 07:30–16:00, weekends closed. Source: https://www.mojastoritev.si/izvajalec%20stre%C5%A1nih%20kritin/kleparstvo-ales-jerman-sp-izvajalec-stresnih-kritin/object_1461 .

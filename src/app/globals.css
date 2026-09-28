@@ -65,3 +65,13 @@
  .hero-photo{inset:0 0 216px;background:#36465b;transform:none!important}
  .hero-photo img{position:absolute;bottom:0;height:auto;max-height:100%;object-fit:contain;object-position:center bottom;mask-image:linear-gradient(to bottom,transparent,#000 25%)}
 }
+
+/* Reserve the tallest review at every width, without clipping longer copy. */
+.review-text{display:grid;width:100%;align-items:center}
+.review-text>span{grid-area:1/1}
+.review-text-hidden{visibility:hidden}
+.footer-hours{margin-top:20px}
+.footer-hours h3{margin-bottom:10px}
+.footer-hours dl{font-size:13px;line-height:1.8}
+.footer-hours dl>div{display:flex;justify-content:space-between;gap:14px}
+.footer-hours dd{margin:0;white-space:nowrap}
