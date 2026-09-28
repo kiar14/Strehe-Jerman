@@ -25,6 +25,12 @@ At the end of every step:
 2. List anything MISSING that the user must get from the client.
 3. Name the next step code.
 
+**Always stop for review.** Run only one step per request, then stop. Never start the next
+step on your own, even if everything looks ready. After a planning step (A2, B1), show the
+plan and ask the user to review it. Build nothing until they answer. If they ask for changes,
+update the plan and stop for review again. Move on only when they approve or type the next
+step code.
+
 ---
 
 ## Part A – Prototype (demo)
@@ -62,7 +68,8 @@ Use `impeccable` (shape). Read `docs/research.md`. Keep it short. No page texts 
 - **Signature moments:** propose 2–3 creative concepts, each tied to what this business does:
   for example an exploded view on scroll, a 3D product that turns as you scroll, a before →
   after facade reveal, or a journey through the whole page. Recommend one.
-- Ask the user about the visual direction and which concept they want before finalising.
+- Ask the user about the visual direction and which concept they want. **Stop and wait for the
+  answer** before writing the final plan.
 
 Then write **`docs/asset-plan.md`** (template in `references/visual-assets.md`):
 - the **house style** that every image prompt shares, so all pictures look like one shoot
@@ -78,6 +85,8 @@ Then write **`docs/asset-plan.md`** (template in `references/visual-assets.md`):
 On request, plan the **other pages** for the demo in the same format (section name, what it is,
 what it looks like) and add them to `docs/demo-plan.md`, with their pictures added to
 `docs/asset-plan.md`.
+
+**Stop for review:** show both plans and wait for the user's approval before A3.
 
 ### A3 · Build the demo
 Set-up, build and motion are one step. Follow `docs/demo-plan.md` and `docs/research.md`.
@@ -114,6 +123,8 @@ Read `docs/research.md`, `docs/demo-plan.md` and the demo. Ask about anything un
 6. **Pictures and motion:** extend `docs/asset-plan.md` to every page: each image slot with a
    copy-paste prompt (same house style) or marked as a real client photo, plus any extra
    signature moments worth adding.
+
+**Stop for review:** show the plan and wait for the user's approval before B2.
 
 ### B2 · Build
 Set-up, build and motion together, starting from the demo. Build **one page per request**, in
