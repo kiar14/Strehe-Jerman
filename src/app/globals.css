@@ -74,3 +74,21 @@
 .footer-hours dl{display:grid;grid-template-columns:max-content max-content;column-gap:16px;font-size:13px;line-height:1.8}
 .footer-hours dl>div{display:contents}
 .footer-hours dd{margin:0;white-space:nowrap}
+
+/* Services-section paper background carried to about, process and reviews. */
+.about-section,.process-section,.reviews-section{background:var(--paper)}
+/* Compact reviews: height comes from the tallest review (.review-text), not a fixed min-height. */
+.reviews-section{padding:76px 0}
+.review-carousel{margin-top:38px}
+.review-card{min-height:0;padding:30px 56px}
+.review-card .review-rating-preview{margin-bottom:14px}
+.review-card>p{font-size:22px}
+.review-card>div{margin-top:16px}
+.review-dots{margin:22px 0}
+@media(max-width:700px){
+ .reviews-section{padding:54px 0}
+ .review-carousel{margin-top:26px}
+ .review-card{padding:24px 20px}
+ .review-card>p{font-size:19px}
+ .review-dots{margin:6px 0 18px}
+}
