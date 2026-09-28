@@ -25,7 +25,10 @@ export function MotionSystem({children}:{children:React.ReactNode}){
  useGSAP(()=>{
   const mm=gsap.matchMedia();
   mm.add('(prefers-reduced-motion: no-preference)',()=>{
-   const lenis=new Lenis({anchors:{offset:-90},duration:1.05,prevent:node=>node.hasAttribute('data-lenis-prevent')});
+   const lenis=new Lenis({anchors:true,duration:1.05,prevent:node=>node.hasAttribute('data-lenis-prevent')});
+   // Lenis animates in-page anchors (offset comes from html scroll-padding); cancel the native jump so the two don't fight.
+   const onAnchor=(e:MouseEvent)=>{const href=(e.target as Element).closest?.('a[href^="#"]')?.getAttribute('href');if(href&&href.length>1&&document.getElementById(decodeURIComponent(href.slice(1)))){e.preventDefault();history.pushState(null,'',href);}};
+   window.addEventListener('click',onAnchor,true);
    const tick=(time:number)=>lenis.raf(time*1000);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(tick);gsap.ticker.lagSmoothing(0);
    ScrollTrigger.config({ignoreMobileResize:true});
    const hero=gsap.timeline({defaults:{ease:'power3.out'}});
@@ -36,7 +39,7 @@ export function MotionSystem({children}:{children:React.ReactNode}){
    const scrollMedia=gsap.matchMedia();
    scrollMedia.add('(min-width: 769px)',()=>gsap.to('.hero-photo',{yPercent:12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}}));
    document.fonts.ready.then(()=>ScrollTrigger.refresh());
-   return ()=>{scrollMedia.revert();gsap.ticker.remove(tick);lenis.destroy();};
+   return ()=>{scrollMedia.revert();gsap.ticker.remove(tick);window.removeEventListener('click',onAnchor,true);lenis.destroy();};
   });
   return ()=>mm.revert();
  },{scope});

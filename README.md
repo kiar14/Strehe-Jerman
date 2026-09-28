@@ -13,7 +13,7 @@ Production: `npm run build && npm run start`. Checks: `npm run lint`, `npm run t
 
 ## Behavior
 
-Service links point to the planned production routes. Form submission is a client-only demonstration; no personal data is sent or stored. Project gallery supports arrow keys and Escape. Logo strip pauses on hover/focus and when offscreen. Reduced-motion users receive a static presentation. Site is intentionally excluded from indexing.
+Service links point to the planned production routes. Form submission is a client-only demonstration; no personal data is sent or stored. Project gallery supports arrow keys and Escape. Logo strip pauses on hover/focus and when offscreen. Reduced-motion users receive a static presentation. The header stays pinned to the top while scrolling at every width; in-page links land just below it. Site is intentionally excluded from indexing. Page metadata (Open Graph, Twitter card, LocalBusiness JSON-LD), favicon, Apple touch icon and web manifest live in `src/app` (`layout.tsx`, `favicon.ico`, `icon.svg`, `apple-icon.png`, `manifest.ts`); manifest PNGs are in `public`.
 
 ## Editing
 

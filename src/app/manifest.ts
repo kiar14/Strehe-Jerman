@@ -1,0 +1,2 @@
+import type { MetadataRoute } from 'next';
+export default function manifest():MetadataRoute.Manifest{return {name:'Strehe Jerman — krovstvo, tesarstvo, kleparstvo',short_name:'Strehe Jerman',description:'Krovstvo, tesarstvo in kleparstvo od leta 2009. Otočec.',start_url:'/',display:'standalone',lang:'sl',background_color:'#f3f0e9',theme_color:'#f3f0e9',icons:[{src:'/icon-192.png',sizes:'192x192',type:'image/png'},{src:'/icon-512.png',sizes:'512x512',type:'image/png'},{src:'/icon-maskable-512.png',sizes:'512x512',type:'image/png',purpose:'maskable'}]};}
