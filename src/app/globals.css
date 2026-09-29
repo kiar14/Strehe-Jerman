@@ -96,15 +96,16 @@
 /* Desktop hero: keep the top of the photo (roof and sky) in view. */
 @media(min-width:701px){.hero-photo{top:0}.hero-photo img{object-position:center top}}
 
-/* Glass header tinted with the sunset sky. The hero slides up underneath it,
+/* Clear glass header: no tint, only a blur of what is behind it. The hero slides up underneath it,
    so the photo starts at the very top of the page and shows through the blur;
    the hero copy keeps its place below the header. */
 :root{--header-h:66px}
 @media(max-width:1150px){:root{--header-h:64px}}
 @media(max-width:700px){:root{--header-h:60px}}
 /* The header logo has a transparent background, so it needs no multiply blend (which would isolate the header and cancel the blur). */
-.header{height:var(--header-h);background:linear-gradient(90deg,rgba(244,196,146,.5),rgba(248,221,192,.46));-webkit-backdrop-filter:blur(18px) saturate(165%);backdrop-filter:blur(18px) saturate(165%);border-bottom:1px solid rgba(255,244,230,.4);box-shadow:0 8px 30px rgba(60,36,16,.08)}
+.header{height:var(--header-h);background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid rgba(255,255,255,.28);box-shadow:0 6px 24px rgba(0,0,0,.05)}
 .header .brand img{mix-blend-mode:normal}
+@media(max-width:700px){.header{background:rgba(255,255,255,.24)}}
 .hero{margin-top:calc(-1 * var(--header-h));height:100svh;min-height:calc(790px + var(--header-h));max-height:calc(1050px + var(--header-h))}
 .hero-content{padding-top:calc(55px + var(--header-h))}
 @media(max-width:1150px){.hero{min-height:calc(820px + var(--header-h))}}
