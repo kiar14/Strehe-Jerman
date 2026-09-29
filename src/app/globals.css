@@ -76,7 +76,7 @@
 .footer-hours dd{margin:0;white-space:nowrap}
 
 /* Services-section paper background carried to about, process and reviews. */
-.about-section,.process-section,.reviews-section{background:var(--paper)}
+.services-section,.about-section,.process-section,.reviews-section{background:#f6f3ed}
 /* Compact reviews: height comes from the tallest review (.review-text), not a fixed min-height. */
 .reviews-section{padding:76px 0}
 .review-carousel{margin-top:38px}
