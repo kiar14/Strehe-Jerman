@@ -75,7 +75,7 @@
 .footer-hours dl>div{display:contents}
 .footer-hours dd{margin:0;white-space:nowrap}
 
-/* Services-section paper background carried to about, process and reviews. */
+/* One light off-white background for services, about, process, reviews and footer. */
 .services-section,.about-section,.process-section,.reviews-section,.footer{background:var(--paper-light)}
 /* Compact reviews: height comes from the tallest review (.review-text), not a fixed min-height. */
 .reviews-section{padding:76px 0}
