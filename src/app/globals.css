@@ -112,36 +112,35 @@
 @media(max-width:700px){.hero{min-height:calc(820px + var(--header-h));max-height:none}.hero-content{padding-top:calc(36px + var(--header-h))}}
 
 /* Inquiry form: bold labels over white fields, services as multi-select chips, full-width message, action on the left. */
-.inquiry-form{align-self:start;padding-top:52px}
-.inquiry-form label,.service-chips legend{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.005em}
-.inquiry-form label{margin-bottom:26px}
+.inquiry-form{align-self:start;padding:36px 40px 34px}
+.inquiry-form label,.service-chips legend{font-size:15px;font-weight:700;color:var(--ink);letter-spacing:-.005em}
+.inquiry-form label{margin-bottom:18px}
 .inquiry-form .optional{font-weight:500;font-size:13px;color:#6a706e;letter-spacing:0}
-.inquiry-form input,.inquiry-form textarea{background:#fff;border-color:#cfc9bf;border-radius:9px;margin-top:10px;transition:border-color .2s,box-shadow .2s}
+.inquiry-form input,.inquiry-form textarea{background:#fff;border-color:#cfc9bf;border-radius:9px;margin-top:7px;min-height:46px;padding:10px 14px;transition:border-color .2s,box-shadow .2s}
 .inquiry-form input:hover,.inquiry-form textarea:hover{border-color:#b3ab9e}
 .inquiry-form input:focus,.inquiry-form textarea:focus{outline:0;border-color:var(--bronze);box-shadow:0 0 0 3px #aa784b26}
 .inquiry-form [aria-invalid=true]{border-color:#c0634d}
-.inquiry-form textarea{min-height:132px}
-.service-chips{border:0;margin:0 0 26px;padding:0;min-width:0}
-.service-chips legend{padding:0;margin-bottom:12px}
-.chip-list{display:flex;flex-wrap:wrap;gap:10px 8px}
-.inquiry-form .chip{position:relative;display:inline-flex;margin:0;font-size:15px;font-weight:600;cursor:pointer}
+.inquiry-form textarea{min-height:88px}
+.service-chips{border:0;margin:0 0 18px;padding:0;min-width:0}
+.service-chips legend{padding:0;margin-bottom:9px}
+.chip-list{display:flex;flex-wrap:wrap;gap:8px 7px}
+.inquiry-form .chip{position:relative;display:inline-flex;margin:0;font-size:14px;font-weight:600;cursor:pointer}
 .inquiry-form .chip input{position:absolute;inset:0;width:100%;height:100%;min-height:0;margin:0;padding:0;border:0;opacity:0;cursor:pointer}
-.chip span{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;border:1px solid #cfc9bf;border-radius:999px;background:#fff;color:var(--ink);line-height:1.3;transition:background .2s,border-color .2s,color .2s}
+.chip span{display:inline-flex;align-items:center;min-height:38px;padding:7px 14px;border:1px solid #cfc9bf;border-radius:999px;background:#fff;color:var(--ink);line-height:1.3;transition:background .2s,border-color .2s,color .2s}
 .chip:hover span{border-color:#b3ab9e}
 .chip input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
 .chip input:focus-visible+span{outline:2px solid var(--bronze);outline-offset:2px}
 .inquiry-form .field-error{font-size:12px;font-weight:600;letter-spacing:0;padding-top:7px}
-.service-chips .field-error{padding-top:10px}
+.service-chips .field-error{padding-top:8px}
 .inquiry-form .form-bottom{flex-direction:row;justify-content:flex-start;align-items:center;gap:22px;margin-top:4px}
-.inquiry-form .form-bottom .button{width:auto;align-self:auto;min-height:52px}
+.inquiry-form .form-bottom .button{width:auto;align-self:auto;min-height:48px;padding-block:12px}
 .inquiry-form .form-bottom>span{max-width:26ch}
-@media(max-width:1150px){.inquiry-form{padding-top:32px}}
-@media(max-width:800px){.inquiry-form{padding-top:36px}}
+@media(max-width:1150px){.inquiry-form{padding:30px 32px}}
+@media(max-width:800px){.inquiry-form{padding:30px 36px}}
 @media(max-width:700px){
- .inquiry-form{padding-top:28px}
- .inquiry-form label,.service-chips legend{font-size:15px}
- .inquiry-form .chip{font-size:14px}
- .chip span{padding:9px 14px}
+ .inquiry-form{padding:26px 23px}
+ .inquiry-form .chip{font-size:13.5px}
+ .chip span{padding:7px 12px}
  .inquiry-form .form-bottom{flex-direction:column;align-items:stretch;gap:14px}
  .inquiry-form .form-bottom .button{width:100%}
  .inquiry-form .form-bottom>span{max-width:none}
