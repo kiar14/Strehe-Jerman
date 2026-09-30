@@ -12,10 +12,6 @@ Changes for this site are often made in separate Claude sessions, each on its ow
 
 When a piece of work is finished, suggest merging its branch into `main` so the next session starts from it.
 
-## Icons
-
-- Always use icons from `lucide-react` (already installed). Do not add another icon library, inline SVG icons or emoji as icons.
-
 ## Checks
 
 - `npm run typecheck` and `npm run lint` must pass before pushing.
